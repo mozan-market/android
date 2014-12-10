@@ -46,20 +46,22 @@
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
-		  		android:text="Phone"/>
-		  <EditText android:id="@+id/phone"
+		  		android:text="Code"/>
+		  <EditText android:id="@+id/code"
 		  		android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:layout_marginTop="5dip"
 		  		android:singleLine="true"
-		  		android:layout_marginBottom="20dip"/>
+		  		android:layout_marginBottom="20dip"
+				/>
 
 		  <!-- Register Button -->		
 		  <Button android:id="@+id/btnRegister" 
 		  		android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:layout_marginTop="10dip"
-		  		android:text="Sign Up"/>
+		  		android:text="Register"
+				android:onClick="register"/>
 		</LinearLayout>
   		<!-- Registration Form Ends -->
   		

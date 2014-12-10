@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">mozan</string>
     <string name="some_text">mozan</string>
+    <string name="signout">sign out</string>
 </resources>

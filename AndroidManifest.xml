@@ -5,12 +5,16 @@
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="21"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name=".RegisterActivity"
-                  android:label="@string/app_name">
+        <activity android:name=".MainActivity" android:label="label test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".GetCodeActivity"
+                  android:label="@string/app_name"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".RegisterActivity" android:label="register"/>
+
     </application>
 </manifest>
