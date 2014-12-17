@@ -13,7 +13,7 @@
                       android:id="@+id/footer"
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
-                      android:background="@layout/footer_repeat"
+                      android:background="@drawable/footer_repeat"
                       android:layout_alignParentBottom="true">
         </LinearLayout>
         <!-- Footer Ends -->
@@ -27,14 +27,20 @@
                     android:layout_height="wrap_content"
                     android:text="@string/hello"/>
         </LinearLayout>
-        <!-- Login Form -->
+        <!-- posts list -->
+        <Button android:id="@+id/btnList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Post List"
+                android:onClick="clickPostsBtn" android:layout_centerHorizontal="true"
+                android:layout_marginBottom="58dp"/>
+        <!-- sign out -->
         <Button android:id="@+id/btnLogout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Log Out"
                 android:onClick="clickButton" android:layout_above="@+id/footer" android:layout_centerHorizontal="true"
                 android:layout_marginBottom="58dp"/>
-        <!-- Login Form Ends -->
 
     </RelativeLayout>
 </ScrollView>

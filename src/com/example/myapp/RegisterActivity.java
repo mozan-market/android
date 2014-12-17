@@ -30,10 +30,7 @@ public class RegisterActivity extends Activity {
 
     private boolean validate(){
         code = etCode.getText().toString().trim();
-        if(!code.equals(""))
-            return true;
-        else
-            return false;
+        return !code.equals("");
     }
 
     public void clickButton(View view){
@@ -100,4 +97,5 @@ public class RegisterActivity extends Activity {
             }
         }
     }
+
 }

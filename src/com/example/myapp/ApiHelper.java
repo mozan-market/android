@@ -39,6 +39,9 @@ public class ApiHelper {
     public static final String TAG = "[API]";
     public static final String CODE_URL = "https://mozan.market"; // will be changed
     public static final String TOKEN_URL = "https://mozan.market/api/auth/token/";
+    public static final String POSTS_URL = "https://mozan.market/api/post/list/";
+    public static final String IMAGES_URL = "https://mozan.market/api/image/list/";
+    public static final String MEDIA_URL = "https://mozan.market/media/";
 
     public JSONObject getCode(String phone) throws ApiException, IOException,
             JSONException {
@@ -163,7 +166,7 @@ public class ApiHelper {
 
         @Override
         public Socket createSocket(Socket socket, String host, int port,
-                                   boolean autoClose) throws IOException, UnknownHostException {
+                                   boolean autoClose) throws IOException {
             return sslContext.getSocketFactory().createSocket(socket, host, port,
                     autoClose);
         }

@@ -21,6 +21,9 @@ public class CodeActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getIntent().getBooleanExtra("EXIT", false)) {
+            finish();
+        }
         setContentView(R.layout.code);
         etPhone = (EditText) findViewById(R.id.phone);
         btnPost = (Button) findViewById(R.id.btnCode);
@@ -43,10 +46,7 @@ public class CodeActivity extends Activity {
     private boolean validate()
     {
         phone = etPhone.getText().toString().trim();
-        if(!phone.equals(""))
-            return true;
-        else
-            return false;
+        return !phone.equals("");
     }
 
     public void clickButton(View view){
@@ -83,7 +83,7 @@ public class CodeActivity extends Activity {
 
                result = "test"; //for testing
 
-               if(result != "")
+               if(!result.equals(""))
                {
                    //defining global variables
                    GlobalVar.Phone = phone;
@@ -107,4 +107,5 @@ public class CodeActivity extends Activity {
             startActivity(in);
         }
     }
+
 }

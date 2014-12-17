@@ -37,4 +37,17 @@ public class HomeActivity extends Activity {
 
     }
 
+    public void clickPostsBtn(View view){
+        try
+        {
+            Intent in = new Intent(HomeActivity.this, PostsActivity.class);
+            startActivity(in);
+        }
+        catch (Exception ex)
+        {
+            Toast.makeText(HomeActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+        }
+
+    }
+
 }
